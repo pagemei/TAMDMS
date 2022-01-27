@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inspection.EquipmentFragment">
+
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_sync"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_sync"
+        style="@style/Theme.TAMDMS.Button"
+        android:layout_marginTop="4dp"
+        android:text="S"
+        app:layout_constraintEnd_toStartOf="@+id/planets_spinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="685dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_search">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#777777"
+            >
+            <TextView android:text="Location"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:layout_weight="0.4">
+            </TextView>
+            <TextView android:text="District"
+                android:layout_width="0dp"
+                android:layout_column="1"
+                android:layout_weight="0.3">
+            </TextView>
+            <TextView android:text="Created Date"
+                android:layout_width="0dp"
+                android:layout_column="2"
+                android:layout_weight="0.3">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <TextView android:text="South Luzon"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:layout_weight="0.4">
+            </TextView>
+            <TextView android:text="South Luzon District 1"
+                android:layout_width="0dp"
+                android:layout_column="1"
+                android:layout_weight="0.3">
+            </TextView>
+            <TextView android:text="January 15, 2021"
+                android:layout_width="0dp"
+                android:layout_column="2"
+                android:layout_weight="0.3">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            >
+            <TextView android:text="South Luzon"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:layout_weight="0.4">
+            </TextView>
+            <TextView android:text="South Luzon District 2"
+                android:layout_width="0dp"
+                android:layout_column="1"
+                android:layout_weight="0.3">
+            </TextView>
+            <TextView android:text="January 01, 2022"
+                android:layout_width="0dp"
+                android:layout_column="2"
+                android:layout_weight="0.3">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.syncdata.SyncDataFromServerFragment">
+
+    <TextView
+        android:id="@+id/edit_sync_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="http://"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/edit_data_deletion"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:ems="10"
+    android:inputType="textMultiLine"
+    android:textSize="12sp"
+    android:text="Sync Profile and Equipment Data to Local Data Source"
+    app:layout_constraintTop_toBottomOf="@+id/edit_sync_data"
+    app:layout_constraintEnd_toStartOf="@+id/button_data_deletion"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintVertical_bias="0.0" />
+
+<Button
+    android:id="@+id/button_data_deletion"
+    android:layout_marginEnd="8dp"
+    android:text="SYNC DATA"
+    style="@style/Theme.TAMDMS.Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edit_sync_data" />
+
+    <TextView
+        android:id="@+id/edit_export_data_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Sync Profile and Equipment Files including images and PDF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_export_data_file"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_data_deletion" />
+
+    <Button
+        android:id="@+id/button_export_data_file"
+        style="@style/Theme.TAMDMS.Button"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="SYNC FILES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_data_deletion" />
+</androidx.constraintlayout.widget.ConstraintLayout>

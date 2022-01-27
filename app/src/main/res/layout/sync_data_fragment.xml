@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.syncdata.SyncDataFragment">
+
+
+    <TextView
+        android:id="@+id/text_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sync Application Data from server"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/edit_sync_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        android:text="Update the local data source of mobile application from server data"
+        app:layout_constraintTop_toBottomOf="@+id/text_sync"
+        app:layout_constraintEnd_toStartOf="@+id/button_sync"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_sync"
+        android:layout_marginEnd="8dp"
+        android:text="SYNC APP DATA"
+        style="@style/Theme.TAMDMS.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sync" />
+
+    <TextView
+        android:id="@+id/text_data_deletion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sync Application To server"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_sync_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/edit_data_deletion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        android:text="Update the server data source with the local data from mobile application"
+        app:layout_constraintTop_toBottomOf="@+id/text_data_deletion"
+        app:layout_constraintEnd_toStartOf="@+id/button_data_deletion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_data_deletion"
+        android:layout_marginEnd="8dp"
+        android:text="SYNC TO SERVER"
+        style="@style/Theme.TAMDMS.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_data_deletion" />
+
+    <TextView
+        android:id="@+id/text_export_data_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Export Data File"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_data_deletion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/edit_export_data_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="12sp"
+        android:text="Export data to sync in Desktop application for offline syncing"
+        app:layout_constraintTop_toBottomOf="@+id/text_export_data_file"
+        app:layout_constraintEnd_toStartOf="@+id/button_export_data_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_export_data_file"
+        android:layout_marginEnd="8dp"
+        android:text="EXPORT FILE"
+        style="@style/Theme.TAMDMS.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_export_data_file" />
+</androidx.constraintlayout.widget.ConstraintLayout>
